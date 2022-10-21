@@ -43,7 +43,7 @@ $(".itemHead").click(function(){
     $(".itemBody").not($(this).next()).slideUp();
 });
 
-
+updateTime();
 setInterval(updateTime,1000);
 
 function updateTime(){
@@ -99,7 +99,7 @@ function updateTime(){
     let sec = Math.floor(diffTime/1000); //reslution of counter
     let min = Math.floor(sec/60); //reslution of counter
     let hours = Math.floor(min/60); //reslution of counter
-    let days = Math.floor(hours/24) ; //my main counter
+    let days = Math.floor(hours/24) - 30 ; //my main counter
     hours %= 24;
     min %= 60;
     sec %= 60;
