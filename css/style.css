@@ -55,6 +55,13 @@ header h1{
 .bar a:hover{
     color: rgba(214, 46, 51) !important;
 }
+.bar span{
+    cursor: pointer;
+    transition: color 0.25s 0s ease;
+}
+.bar span:hover{
+    color: rgba(214, 46, 51) !important;
+}
 .open{
     left:0;
     cursor: pointer;
